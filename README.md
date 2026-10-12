@@ -1,4 +1,4 @@
-h# Movie Review Sentiment: Where Do Classical and Transformer Models Break?
+# Movie Review Sentiment: Where Do Classical and Transformer Models Break?
 
 Built during the Wheeltrix Data Science & Analytics internship.
 
@@ -6,7 +6,9 @@ I trained a classical model (TF-IDF + logistic regression) and a fine-tuned Dist
 then went beyond accuracy: cross-domain tests, a behavioural test suite, word-level explanations (LIME),
 an attempt to fix the baseline, and an error taxonomy.
 
-**Live demo:** TODO (Streamlit link) &nbsp;|&nbsp; **Model:** TODO (Hugging Face link)
+![Movie Sentiment Analysis app](results/screenshot.png)
+
+**Live demo:** [Try the app](https://sentiment-movie-review-analysis-u55xlkh4binccbztv22c4c.streamlit.app/) &nbsp;|&nbsp; **Model:** [DistilBERT on Hugging Face](https://huggingface.co/sidratahseen/distilbert-imdb-sentiment)
 
 ## Key findings
 
@@ -135,8 +137,7 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
-The app loads `logreg_negation_pipeline.joblib` from this folder and downloads the DistilBERT model from
-the Hugging Face Hub (TODO: link).
+The app loads `logreg_negation_pipeline.joblib` from this folder and downloads the [DistilBERT model](https://huggingface.co/sidratahseen/distilbert-imdb-sentiment) from the Hugging Face Hub.
 
 ## Repository layout
 
